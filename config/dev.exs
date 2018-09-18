@@ -51,6 +51,6 @@ config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "lukaszszmelc",
   password: "postgres",
-  database: "discuss_dev",
+  database: "lukaszszmelc",
   hostname: "localhost",
   pool_size: 10

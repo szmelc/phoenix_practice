@@ -28,9 +28,9 @@ import_config "#{Mix.env}.exs"
 
 config :ueberauth, Ueberauth,
 providers: [
-  github: { Ueberauth.Strategy.Github, [] }
+  github: { Ueberauth.Strategy.Github, [default_scope: "user,public_repo"]}
 ]
 
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
-  client_id: "41893410f0215f25f768",
-  client_secret: "8f98428df469c75b6f09779aa97f7747405c22d1"
+  client_id: "e865f78f46c2363ea105",
+  client_secret: "c9579094b16ea0517410ebc2fe12f805a04ce448"

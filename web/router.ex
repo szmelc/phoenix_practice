@@ -13,7 +13,7 @@ defmodule Discuss.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/topics", Discuss do
+  scope "/", Discuss do
     pipe_through :browser # Use the default browser stack
 
     resources "/", TopicController
@@ -22,6 +22,7 @@ defmodule Discuss.Router do
   scope "/auth", Discuss do
     pipe_through :browser
 
+    get "/signout", AuthController, :signout
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
   end

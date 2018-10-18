@@ -2,7 +2,7 @@
 
 1. You need to have Elixir & Phoenix installed
 
-2. After installing Phoenix, go to project's directory and run `mix deps.get`
+2. After installing Phoenix, go to project's directory and run `mix deps.get` and `npm install` 
 
 3. Make sure you set database credentials in `config/dev.exs` (preferably `username: "postgres", password: "postgres"`)
 
